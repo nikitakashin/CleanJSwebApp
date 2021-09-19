@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    background: #E4EFF7;
+}
+
+* {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #1C1C1C;
+}
+
+.app {
+    margin-top: 56px;
+    margin-bottom: 118px;
+    margin-left: 108px;
+    margin-right: 108px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55px;
+}
+
+nav button {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 8px 8px 0px 0px;
+    flex-grow: 1;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+}
+
+nav button:hover {
+    background: #f0eff6;
+    cursor: pointer;
+}
+
+nav button:active {
+    background: #c9c7d6;
+    cursor: pointer;
+}
+
+.inactive_nav_btn {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.inactive_nav_btn:hover {
+    background: rgba(220, 218, 231, 0.5);
+    cursor: pointer;
+}
+
+.inactive_nav_btn:active {
+    background: rgba(195, 193, 211, 0.5);
+    cursor: pointer;
+}
+
+.favorite_tab {
+    display: flex;
+    align-items: center;
+}
+
+.favorite_tab i {
+    display: flex;
+    background: url('../assets/star.svg');
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+.container {
+    display: flex;
+    background: #FFFFFF;
+    min-height: 832px;
+    box-shadow: 0px 13px 19px rgba(105, 172, 201, 0.24);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.catalog {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+.favorite {
+    display: none;
+}
+
+.main_preloader {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_preloader img {
+    display: flex;
+    width: 48px;
+    height: 48px;
+}
+
+/* Album List */
+
+.album_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.album {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    padding-left: 80px;
+    background: white;
+    border: none;
+    align-items: center;
+}
+
+.album:hover {
+    background: #EDF9FF;
+}
+
+/* END OF Album List */
+
+
+/* Photo preview */
+
+.gallery_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 534px;
+    align-items: center;
+}
+
+.photo_preview {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 42px;
+    background: white;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo_preview img {
+    border-radius: 4px;
+}
+
+.add_to_favorite {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    margin-left: 110px;
+    margin-bottom: 110px;
+    background: #FFFFFF;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 0;
+}
+
+.add_to_favorite i[data-tapped='0'] {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background: url('../assets/star_grey.svg');
+}
+
+.add_to_favorite i[data-tapped='1'] {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background: url('../assets/star_gold.svg');
+}
+
+/* END OF Photo preview */
+
+/* Name list */
+
+.name {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    padding-left: 20px;
+    background: white;
+    border: none;
+    align-items: center;
+}
+
+.name:hover {
+    background: #EDF9FF;
+}
+
+.plus_btn_container {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_and_secondname {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.plus {
+    display: flex;
+    border-radius: 50%;
+    border: none;
+    background: #117DC1;
+    color: aliceblue;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus_tapped {
+    background: #FFAF37;
+}
+
+.plus_tapped:hover {
+    background: #e99e2f !important;
+}
+
+.plus_tapped:active {
+    background: #cc861c !important;
+}
+
+.plus:hover {
+    background: #0e76b6;
+}
+
+.plus:active {
+    background: #0a69a5;
+}
+
+/* End of Name list */
